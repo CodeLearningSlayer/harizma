@@ -1,0 +1,997 @@
+
+@media(max-width:1815px){
+    .start-info__img{
+        right: 70px;
+    }
+    .contacts{
+        margin-left: 240px; 
+    }
+}
+
+@media(max-width:1705px){
+    .start-info{
+        &__img{
+            top: 115px;
+        width: 575px;
+        }
+        &__tag{
+            background-size: contain;
+            width: 270px;
+            height: 270px;
+            left:30px;
+        }
+        &__tag::before{
+            top:15px;
+        }
+        &__tag-main{
+            font-size: 18px;
+        }
+        &__tag-sub{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media (max-width:1650px){
+    .start-info{
+        &__tag{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:1500px){
+    .contacts{
+        margin-left: 80px;
+    }
+    .start-info{
+        &__img{
+            right:20px;
+            top:120px;
+        }
+    }
+}
+
+@media(max-width: 1400px){
+    .start-info{
+        .title{
+            font-size: 65px;
+        }
+        &__imgbox{
+            height: 700px;
+            margin-top: -230px;
+        }
+        .reservation-btn{
+            margin-bottom: 45px;
+        }
+    }
+    .reservation{
+        padding-top: 65px;
+        padding-bottom: 55px;
+
+    }
+    .reservation-step{
+        &__imgbox::after{
+            left: -7px !important;;
+        }
+        &__num{
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+@media(max-width: 1315px){
+    .contacts{
+        margin-left: 24px;
+    }
+    .contact-place{
+        margin-left: 30px;
+    }
+    .start-info{
+        width: 650px;
+        &__img{
+            bottom:-155px;
+            top:unset;
+        }
+        .title{
+            font-size: 50px;
+        }
+        &__subtitle{
+            font-size: 33px;
+        }
+        &__imgbox{
+            height: 718px;
+        }
+    }
+    .header{
+        &__nav{
+            padding-right: 0;   
+        }
+    }
+
+}
+
+@media(max-width: 1250px){
+    .header{
+        &__contacts{
+            margin: 0 auto;
+        }
+        &__contacts-item{
+            font-size: 0;
+            &::before{
+                top:-40px;
+            }
+            &::after{
+                top:-25px;
+            }
+        }
+    }
+    .start-bottom{
+        &__item{
+            padding: 44px 15px 44px 4px;
+        }
+        &__text{
+            padding-left: 10px;    
+        }
+    }
+    .start-info{
+        &__img{
+            bottom:-100px;
+        }
+    }
+    .box{
+        width: 305px;
+        &__img{
+            margin-top: 0;
+        }
+    }
+    .reservation-step{
+        &__num{
+            width: 61px;
+            height: 61px;
+            right:0;
+        }
+    }
+    .footer{
+        .contact-schedule{
+            display: none;
+        }
+    }
+}
+
+@media(max-width:1100px){
+    .start-info{
+        width: 560px;
+    }
+    .gallery-top{
+        &__item{
+            img{
+                height: 710px;
+            }
+        }
+    }
+    .gallery{
+        margin: auto 0;
+    }
+    .advantages{
+        &__grid{
+            &::after,
+            &::before{
+                content: "";
+                flex-basis: 100%;
+                width: 0;
+                order: 2;
+            }
+            height: 1047px;
+            z-index:5;
+            display:flex;
+            grid-gap:0;
+            flex-flow: column wrap;
+        }
+        &__item{
+            padding: 18px 8px 5px 18px;
+            width: 285px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            height: fit-content;
+            &:nth-child(2n+1) { order: 1; }
+            &:nth-child(2n) { order: 2; }
+        }
+    }
+    .reservation-step{
+        &__imgbox::after{
+            left:-12px !important;
+        }
+    }
+    .quiz{
+        padding-top: 75px;
+        &__inner{
+            flex-direction: column;
+        }
+        &__title{
+            text-align: center;
+            display: block;
+        }
+    }
+    .footer{
+        position: relative;
+        padding: 60px 0 50px;
+        &__inner{
+            flex-direction: column;
+        }
+        .scroll{
+            position: absolute;
+            right:0;
+            top:90px;
+        }
+        .contacts-item{
+            margin-bottom: 50px;
+            margin-left: 0;
+            &::before{
+                top: -20px; 
+            }
+            &::after{
+                top:-6px;
+            }
+        }
+        .logo{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media(max-width:970px){
+    .overlay{
+        position: absolute;
+        top:0;
+        right: 0;
+        left:0;
+        bottom: 0;
+        transition: all .5s;
+    }
+
+    .gallery-top{
+        &__item{
+            img{
+                height: 575px;
+            }
+        }
+    }
+    .overlay--active{
+        background: black;
+        opacity: .7;
+        z-index: 3;
+    }
+    .header{
+        transition: all .3s;
+        &__inner{
+            flex-direction: column;
+            align-items: start;
+        }
+        &__menu-btn{
+            display: inline-block;
+            z-index: 2;
+            width: 48px;
+            right:60px;
+        }
+        &__contacts{
+            margin-left: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 50px;
+        }
+        &__nav-wrapper{  
+            opacity: 1;  
+            z-index: 4;
+            position: absolute;
+            left:0;
+            padding: 0 15px;
+            top:0px;
+            padding-left: 40px;
+            padding-top: 25px;  
+            background-color: #282B32;
+            transition: all .3s;
+            box-shadow: 0 39px 27px 12px rgba(0, 0, 0, .5);
+            top: -100%;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 40px;
+        }
+        &__contact-place{
+            margin-left: 0;
+            display: block;
+            margin-bottom: 50px;
+        }
+        &__nav{
+            flex-direction: column;
+        }
+        &__nav-btn{
+            height: 50px;
+        }
+        &__nav-btn + .header__nav-btn{
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        &__nav-wrapper--active{
+            top:100px;
+        }
+    }
+    .header--grey{
+        background-color: #282B32;
+    }
+    .contacts-item{
+        font-size: 18px;
+        &::before{
+            top:-20px;
+        }
+        &::after{
+            top:-7px;
+        }
+    }
+    .start-info{
+        width: 100%;
+        &__list{
+            flex-direction: column;
+        }
+        &__imgbox{
+            margin-top: 0;
+            height: 750px;
+        }
+        &__item{
+            margin-bottom: 20px;
+        }
+        .title{
+            font-size: 42px;
+            line-height: 50px;
+        }
+    }
+    .start-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &__item{
+            width: auto;
+            &:nth-child(2){
+                order:-1;
+            }
+        }
+    }
+    .advantages{
+        &__inner{
+            flex-direction: column;
+        }
+        &__grid{
+            align-items: flex-end;
+            height: 915px;
+        }
+        &__img-box{
+            height: 610px;
+        }
+        &__title{
+            font-size: 50px;
+            line-height: 50px;
+        }
+        &__img-box{
+            margin: 0 auto;
+            img{
+                margin: 0 auto;
+            }
+        }
+        &__item{
+            width: 230px;
+        }
+    }
+    .reservation{
+        &__title{
+            font-size: 55px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width:850px){
+    .start-info{
+        &__subtitle{
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        .title{
+            font-size: 33px;
+            line-height: 40px;
+        }
+        &__imgbox{
+            height: 640px;
+        }
+    }
+    .reservation-step{
+        &__num{
+            right:30px;
+        }
+    }
+    .reservation{
+        .swiper-button-wrapper{
+            margin: 30px auto 0;
+        }
+        &__title{
+            margin: 0 auto;
+            display: block;
+            font-size: 45px;
+            line-height: 60px;
+            text-align: center;
+        }
+    }
+    .reservation-top{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:750px){
+    .start-info{
+        &__imgbox{
+            display: none;
+        }
+        &__sub-box span{
+            margin: auto auto 13px;
+        }
+    }
+    .reservation-btn{
+        margin-bottom: 20px;
+    }
+    .gallery-top{
+        &__item{
+            width: 100% !important;
+        }
+    }
+    .karaoke__left-box{
+        width: 100%;
+        padding-top: 60px;
+    }
+    .karaoke-slider{
+        width: auto;
+        &__pagination{
+            justify-content: space-around;
+        }
+    }
+    .gallery{
+        margin-bottom: 40px;
+    }
+    .karaoke{
+        &__title{
+            font-size: 50px;
+        }
+        &__item{
+            margin-bottom: 0;
+        }
+    }
+    .reservation-step{
+        &__num{
+            right:0px;
+        }
+    }
+    .right-box{
+        margin-left: 0;
+        &__text{
+            width: auto;
+        }
+    }
+    .quiz{
+        padding-bottom: 60px;
+    }
+}
+
+
+@media (max-width:530px){
+    .start{
+        &__telegram{
+            right: 0;
+        }
+    }
+    .start-bottom{
+        &__item{
+            flex-direction: column;
+            align-items: start;
+            padding: 15px 10px 5px 15px;
+        }
+        &__item-img{
+            margin-bottom: 10px;
+        }
+    }
+    .advantages{
+        &__title{
+            font-size: 37px;
+        }
+        &__grid{
+            height: 1047px;
+            z-index: 5;
+        }
+        &__item{
+            width: 175px;
+        }
+        &__img-box{
+            height: 370px;
+        }
+    }
+    .reservation-step{
+        &__img{
+            margin: 0 auto;
+        }
+        &__imgbox{
+            width: fit-content;
+            margin:0 auto;
+        }
+        &__num{
+            right: 50px;
+        }
+        &__info{
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+    }
+    .reservation{
+        &__title{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &__subtitle{
+            font-size: 18px;
+            text-align: center;
+        }
+        .swiper-button-wrapper{
+            margin-top: 0;
+        }
+    }
+    .reservation-top{
+        margin-top: 30px;
+    }
+    .right-box{
+        &__text{
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+    .quiz{
+        &__title{
+            font-size: 39px;
+            line-height: 47px;
+        }
+    }
+    .footer .scroll{
+        right:-81px;
+    }
+}
+
+
+@media (max-width:430px){
+    .header{
+        .logo{
+            max-width: 200px;
+        }
+        &__nav-wrapper--active{
+            top:90px;
+        }
+        &__menu-btn{
+            top:60px;
+        }
+    }
+    .start{
+        &__telegram{
+            display: none;
+        }
+    }
+    .container{
+        padding: 0 15px;
+    }
+    .start-page{
+        padding-top: 60px;
+    }
+    .karaoke{
+        &__title{
+            font-size: 45px;
+        }
+    }
+    .advantages{
+        &__list-item{
+            font-size: 13px;
+            padding-left: 20px;
+            
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__title{
+            font-size: 33px;
+            line-height: 40px;
+        }
+        &__item{
+            width: 150px;
+        }
+    }
+    .reservation-step{
+        &__num{
+            right: 20px;
+        }
+    }
+    .quiz{
+        &__subtitle{
+            font-size: 20px;
+        }
+    }
+    .footer{
+        &__inner{
+            align-items: flex-start;
+        }
+        .logo{
+            max-width: 70%;
+        }
+        .contacts-item{
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:360px){
+    .start{
+        &__telegram{
+            display: none;
+        }
+    }
+    .logo{
+        width: 162px;
+        margin-bottom: 34px;
+        z-index: 5;
+    }
+    .header{
+        &__menu-btn{
+            top:55px;
+        }
+    }
+    
+    .start-page{
+        padding-top: 61px;
+        background-image:url("../img/smallSizebg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .start-info{
+        width: 100%;
+        z-index:1;
+        &__subtitle{
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .title{
+            font-size: 36px;
+            line-height: 50px;
+        }
+        &__sub-box {
+            margin-bottom: 30px;
+            span{
+                margin-top: 15px;
+                margin-bottom: 0;
+            }
+        }
+        &__item + .start-info__item{
+            margin-top: 17px;
+            margin-left: 0;
+        }
+        &__list{
+            display: block;
+            z-index: 1;
+        }
+        &__imgbox{
+            width: 426px;
+            overflow: hidden;
+            margin: 0;
+            position: absolute;
+            right: -122px;
+            z-index: 0;
+            height: 595px;
+            bottom:0;
+        }
+        &__tag{
+            display: none;
+            &::before{
+                top:7px;
+            }
+        }
+        &__tag-sub{
+            font-size: 12px;
+            margin-bottom: 0px;
+            line-height: 18px;
+        }
+        &__tag-main{
+            font-size: 14px;
+        }
+        &__img{
+            right:0;
+        }
+        &__list{
+        margin-bottom: 130px !important;
+        }
+        &__item{
+            width: 142px;
+            &:first-child{
+                width: 195px;
+            }
+        }
+        .reservation-btn{
+            margin-bottom: 32px;
+        }
+    }
+    .start-bottom{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        &__item{
+            width: 180px;
+            width: auto;
+            &:nth-child(4){
+                grid-row: 2;
+            }
+            &:nth-child(2){
+                order:0;
+            }
+        }
+        &__text{
+            padding-left: 0;
+        }
+    }
+    .karaoke{
+        padding-bottom: 55px;
+        &__title{
+            font-size: 33px;
+            line-height: 0px;
+        }
+        &__left-box{
+            padding-top: 53px;
+            width: 100%;
+        }
+        &__subtitle{
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+        &__inner{
+            flex-direction: column;
+        }
+        .karaoke-slider{
+            width: auto;
+            margin-left: 0;
+            .swiper-pagination-bullet{
+                text-align: center;
+                margin-right: 15px;
+
+            }
+            &__pagination{
+                flex-wrap: wrap;
+                margin-bottom: 15px;    
+            }
+        }
+        &__item{
+            margin-bottom: 0;
+        }
+    }
+    .gallery{
+        margin-bottom: 30px;
+    }
+    .gallery-top{
+        &__img{
+            height: auto !important;
+        }
+    }
+    .advantages{
+        padding:61px 0 54px;
+        &__title{
+            font-size: 30px;
+            line-height: 32px;
+        }
+        &__subtitle{
+            font-size: 18px;
+            line-height: 23px;
+        }
+        
+        &__inner{
+            flex-direction: column;
+        }
+        
+
+        &__right-box{
+            background-image: none;
+            position: relative;
+            z-index: 2;
+            &::before{
+                content:"";
+                width: 373px;
+                z-index: 0;
+                height: 286px;
+                top:-195px;
+                left:-155px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: lighten;
+                background-color: #191b20;
+                position: absolute;
+                background-image: url("../img/advantages/wall-bg.png");
+            }
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__list-item{
+            font-size: 13px;
+        }
+        &__img-box{
+            width: 183px;
+            height: 309px;
+            margin-left: 0;
+            margin-bottom: 45px;
+            position: relative;
+            overflow: hidden;
+            top:-218px;
+            left:-15px;
+            img{
+                margin-top:0;
+                height: 400px;
+            }
+        }
+        &__btn{
+            margin-top: -262px;
+            width: 100%;
+        }
+        &__item{
+            width: 139px;
+        }
+    }
+    .reservation{
+        &__title{
+            font-size: 28px;    
+            line-height: 40px;    
+        }
+        &__subtitle{
+            font-size: 18px;    
+        }
+        padding-top: 45px;
+    }
+   .reservation-top{
+        display: block;
+    }
+    .reservation-step{
+        &__num{
+            right:21px;
+        }
+        &__imgbox{
+            img{
+                margin: 0 auto;
+            }
+        }
+        
+        &__text{
+            width: 160px;
+        }
+    }
+    .quiz{
+        &__title{
+            font-size: 33px;
+            line-height: 48px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+        &__inner{
+            flex-direction: column;
+        }
+        &__item-info{
+            font-size: 13px;
+            line-height: 18px;
+        }
+        .right-box{
+            margin: 0;
+            &__text{
+                font-size: 24px;
+                line-height: 42px;
+                width: 100%;
+            }
+            &__btn{
+                width: 100%;
+            }
+        }
+        
+    }
+    .footer{
+        position: relative;
+        padding: 42px 0 42px;
+        .logo{
+            margin-bottom:50px;
+        }
+        &__inner{
+            flex-direction: column;
+            align-items: start; 
+        }
+        .contact-schedule{
+            display: none;
+        }
+        .contacts-item{
+            height: 60px;
+            display: none;
+        }
+        .contact-tel{
+            margin-bottom: 13px;
+        }
+        .scroll{
+            position: absolute;
+            right: -75px;
+            top: 167px;
+        }
+        &__btn{
+            display: none;
+        }
+        &__wrapper{
+            all:unset;
+            .contacts-item{
+                display: block;
+            }
+            .contacts{
+                margin-bottom: 32px;
+            }
+            .contact-tel{
+                margin-bottom: 0;
+            }
+            .contacts-item{
+                height: 18px;
+            }
+        }
+        .scroll{
+            &__link{
+                width: 50px;
+                height: 50px;
+
+            }
+        }
+    }
+}
+
+@media (max-width:335px){
+    .header{
+        &__contacts-item{
+            font-size: 16px;
+        }
+    }
+    .start-info{
+        &__imgbox{
+            display: none;
+        }
+        &__item{
+            width: 100%;
+        }
+        &__list{
+            margin-bottom: 30px !important;
+        }
+    }
+    .start-bottom{
+        &__item{
+            padding-left: 15px !important; 
+        }
+       
+        &__item-img{
+            width: 50px;
+        }
+    }
+    .title{
+        font-size: 28px !important;
+    }
+    .advantages{
+        &__item{
+            width: 139px !important;
+            padding-left: 8px !important;
+        }
+        &__img{
+            width: 69px;
+            height: 69px;
+        }
+    }
+}
